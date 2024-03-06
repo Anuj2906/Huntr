@@ -1,0 +1,147 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding:0;
+  text-align: center;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.file-upload-container {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  border: 2px dashed transparent; /* Initial border style */
+  transition: border-color 0.3s ease-in-out; /* Smooth transition for border color */
+}
+
+.file-upload-form {
+  background-color: #4e5f6d;
+  width: 60vw;
+  border-radius: 10px;
+  padding: 0px 20px 15px;
+  box-shadow: 0px 0px 10px 0px rgba(30, 15, 195, 0.1);
+  border: 4px dashed transparent;
+  transition: border-color 0.3s ease-in-out;
+  text-align: center;
+}
+
+.file-upload-form:hover {
+  background-color: #3a5b6c;
+}
+
+.file-upload-form.drag-over {
+  border-color: #fafafa; /* Change border color when files are dragged over */
+}
+.file-upload-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.file-upload-input {
+  display: none;
+}
+
+.upload-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.submit-button {
+  background-color: rgba(31, 41,55, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  justify-items: left;
+}
+.submit-button:hover {
+  background-color: #697480;
+}
+
+.selected-file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #374452;
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 5px;
+}
+
+.selected-file button {
+  background-color: #ec5b69;
+  color: rgb(12, 12, 12);
+  border: none;
+  border-radius: 5px;
+  padding: 3px 7px;
+  cursor: pointer;
+}
+
+.selected-file button:hover {
+  background-color: #c82333;
+}
+
+.selected-files-container {
+  margin-top: 10px;
+  max-height: 58vh; /* Set a fixed height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  width: 100%; /* Set a fixed width */
+}
+
+.selected-files-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-icon:hover {
+  cursor: pointer;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* Set width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #7d95a2; /* Color of the track */;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1f2937; /* Color of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* For Firefox */
+/* Width of the scrollbar */
+.scrollbar {
+  scrollbar-width: thin;
+}
+
+/* Track */
+.scrollbar-track {
+  background: #7d95a2; /* Color of the track */
+}
+
+/* Handle */
+.scrollbar-thumb {
+  background: #1f2937; /* Color of the handle */
+}
+
+/* Handle on hover */
+.scrollbar-thumb:hover {
+  background: #555; /* Color of the handle on hover */
+}
